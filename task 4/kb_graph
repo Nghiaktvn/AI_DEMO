@@ -1,0 +1,27 @@
+digraph {
+	rankdir=LR
+	dpi=100
+	a [label=a fillcolor="#d4edda" fontname="Arial Bold" style=filled]
+	b [label=b fillcolor="#d4edda" fontname="Arial Bold" style=filled]
+	l [label=l fontname=Arial]
+	m [label=m fontname=Arial]
+	p [label=p fontname=Arial]
+	q [label=q fontname=Arial]
+	p -> q
+	and_0 [label=AND fillcolor="#f8f9fa" fixedsize=true fontsize=10 height=0.8 shape=circle style=filled width=0.8]
+	l -> and_0 [arrowhead=none]
+	m -> and_0 [arrowhead=none]
+	and_0 -> p
+	and_1 [label=AND fillcolor="#f8f9fa" fixedsize=true fontsize=10 height=0.8 shape=circle style=filled width=0.8]
+	b -> and_1 [arrowhead=none]
+	l -> and_1 [arrowhead=none]
+	and_1 -> m
+	and_2 [label=AND fillcolor="#f8f9fa" fixedsize=true fontsize=10 height=0.8 shape=circle style=filled width=0.8]
+	a -> and_2 [arrowhead=none]
+	p -> and_2 [arrowhead=none]
+	and_2 -> l
+	and_3 [label=AND fillcolor="#f8f9fa" fixedsize=true fontsize=10 height=0.8 shape=circle style=filled width=0.8]
+	a -> and_3 [arrowhead=none]
+	b -> and_3 [arrowhead=none]
+	and_3 -> l
+}
